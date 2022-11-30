@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import profileImage from '../../Images/anonymous.png'
+import profileImage from '../../Assets/anonymous.png'
 import data from '../../data.json'
 import {BsDownload} from 'react-icons/bs'
 import Demo_CV from '../../Assets/Demo_CV.pdf'
