@@ -25,11 +25,9 @@ const UserCard = () => {
             <p className='profile-card-heading' >I am Professional {filteredData[0].Skills}Developer</p>
           </div>
           <div>
-            <p className='profile-card-summary' >Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-              Tenetur eveniet modi aspernatur molestias veniam numquam quasi 
-              tempora ab unde voluptates dolor illo suscipit temporibus recusandae, 
-              laudantium nulla fugit expedita earum aperiam ratione repellendus libero 
-              saepe praesentium perspiciatis? Ad ut iusto magnam? Pariatur placeat ab amet 
+            <p className='profile-card-summary' >Senior Tech Lead with 18+ Years hands on experience with
+                                                 almost all popular web and mobile app
+                                                 technologies. Worked with Internet Giants like Yahoo, Mindtree etc.
               </p>
           </div>
           <div>

@@ -1,23 +1,53 @@
-.App{
-  height: 100vh;
+body{
+  background-color: #F1F1F1;
 }
+
+.App{
+  height: 750px;
+  /* background: linear-gradient(to right, #F1F1F1 60%, #ff99cc 160%); */
+  background: linear-gradient(90deg, #F1F1F1 20%, rgb(237, 206, 243) 80%);
+  /* border: 2px solid rgb(255, 89, 0); */
+}
+
+.App:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    mask-image: linear-gradient(to bottom, transparent, black);
+    background: linear-gradient(90deg, #F1F1F1 20%, rgb(179, 229, 214) 80%); 
+  }
 
 .header-data:hover{
   background-color: rgb(211, 174, 247)!important;
 }
 
+.logo{
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+}
+
 /* USER'S CARD     */
 
 .user-list{
-  width: 80%;
-  margin: 1% auto;
+  width: 100%;
+  height: 100vh;
+  margin: -2% auto;
+  position: relative;
+    left: 0;
+    right: 0;
+    background-color: #F1F1F1;
+    padding: 20px;
 }
 
 .users-table{
   width: 90%;
   margin: auto auto;
   /* border: 1px solid black; */
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .users-head{
@@ -51,9 +81,13 @@
   text-decoration: none;
 }
 
+
 .profile{
   width: 100%;
   /* border: 1px solid red; */
+  position: relative;
+    left: 0;
+    right: 0;
 }
 
 .profile-data{
@@ -93,17 +127,18 @@
 .profile-exp{
   /* border: 1px solid black; */
   padding: 10px;
-  background-color: rgb(238, 224, 245);
+  background-color: #BB2428;
   margin-right: 5px;
   border-radius: 3px;
   width: 30%;
   height: 40px;
   display: flex;
   flex-direction: column;
+  color: white;
   /* align-items: center; */
   gap: -20px;
   padding-top: 10px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .profile-exp > div{
@@ -113,13 +148,14 @@
 }
 
 .exp{
-  color: rgb(92, 89, 89);
+  color: rgb(234, 224, 224);
   margin-top: 5px;
+  margin-top: 7px;
 }
 
 .profile-year{
   font-size: 25px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .exp-box{
@@ -152,16 +188,23 @@
 
 /* user's card */
 
+.user-card{
+  background-color: #F1F1F1;
+  padding: 20px;
+}
+
 .profile-card{
   /* background-color: grey!important; */
-  margin-top: 10%!important;
+  margin-top: 5%!important;
   display: flex;
   margin: auto auto;
+  margin-bottom: 30px;
   width: 50%;
   gap: 5%;
   /* border: 1px solid black; */
   padding: 30px;
   box-shadow: 4px 3px 10px grey;
+  background-color: white;
 }
 
 .profile-card-image{
@@ -189,7 +232,7 @@
 }
 
 .cv-btn{
-  background-color: rgb(188, 122, 249);
+  background-color: #BB2428;
   height: 50px;
   width: 200px;
   border-radius: 4px;
@@ -208,13 +251,14 @@
 .cv-btn:hover{
   height: 46px;
   width: 200px;
-  border: 2px solid rgb(188, 122, 249);
+  border: 2px solid #BB2428;
   background-color: white;
-  color: rgb(160, 82, 233);
+  color: #BB2428;
   text-decoration: none;
 }
 
 .footer{
+  position: relative;
   height: 100px;
   border: 1px solid rgb(214, 213, 213);
   border-bottom: none;
@@ -223,6 +267,7 @@
   justify-content: center;
   float:inline-end;
   margin-top: 5%;
+  background-color: white;
 }
 
 .footer-text{

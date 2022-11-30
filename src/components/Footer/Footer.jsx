@@ -1,9 +1,12 @@
 import React from 'react'
 
 const Footer = () => {
+
+  const curr_year = new Date().getFullYear()
+
   return (
     <div className='footer' >
-        <p className='footer-text' >© 2020 Copyright: iView labs.com</p>
+        <p className='footer-text' >©{curr_year} Copyright All rights reserved by iView Labs</p>
     </div>
   )
 }

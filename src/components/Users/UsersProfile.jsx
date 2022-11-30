@@ -29,7 +29,7 @@ const UsersProfile = () => {
                 </div>
                 <div className='profile-box'>
                         <div className='profile-exp exp-box' >
-                            <div className='profile-year' >{filteredData[0].Experience} Y.</div><br />
+                            <div className='profile-year' >{filteredData[0].Experience} Year.</div><br />
                             <div className='exp' >Experience</div>
                         </div>
                         <div className='profile-exp rating-box' >
@@ -43,7 +43,7 @@ const UsersProfile = () => {
                 <img src={profileImage} alt="profile image" />
             </div>
         </div>
-        <div >
+        <div className='user-card'>
         <UserCard />
         </div>
     </div>
