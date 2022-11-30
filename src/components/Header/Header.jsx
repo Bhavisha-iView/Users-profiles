@@ -27,7 +27,7 @@ function Header(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6" sx={{ my: 2, px:10 }}>
         iView
       </Typography>
       <Divider />
@@ -48,7 +48,7 @@ function Header(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar component="nav"  >
-        <Toolbar sx={{backgroundColor:"rgb(116, 113, 113)"}} >
+        <Toolbar sx={{backgroundColor:"white"}} >
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -61,13 +61,13 @@ function Header(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', color: 'black' } }}
           >
             iView
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: 'black' }} className='header-data' >
                 {item}
               </Button>
             ))}

@@ -1,9 +1,13 @@
 .App{
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
+
+.header-data:hover{
+  background-color: rgb(211, 174, 247)!important;
+}
+
+/* USER'S CARD     */
+
 .user-list{
   width: 80%;
   margin: 1% auto;
@@ -26,6 +30,10 @@
   background-color: rgb(215, 232, 247);
 }
 
+.users-head > tr > th{
+  padding-left: 10px;
+}
+
 .data-row{
   /* border: 1px solid black; */
   height: 50px;
@@ -35,6 +43,7 @@
 
 .data-row > td{
   border-bottom: 1px solid rgb(224, 217, 217);
+  padding-left: 10px;
 }
 
 .user-name{
@@ -43,23 +52,26 @@
 }
 
 .profile{
-  margin: 1% auto;
-  width: 60%;
-  border: 1px solid rgb(184, 182, 182);
-  box-shadow: 4px 4px 10px grey;
-  padding: 40px 20px;
-  /* height: 200px; */
-  border-radius: 10px;
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
-.profile > div{
-  background-color: rgb(223, 219, 219);
+.profile-data{
+  margin: 4% auto;
+  width: 60%;
+  display: flex;
+  /* grid-template-columns: 40% 30%; */
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  border-radius: 10px;
+  /* background-color: rgb(248, 242, 242); */
   /* border: 1px solid black; */
-  padding: 30px;
+  padding: 5%;
 }
 
 .profile-head-name{
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
 }
 
@@ -70,18 +82,21 @@
 }
 
 .profile-box{
-  margin-top: 30px;
+  margin-top: 60px;
   height: 70px;
-  background-color: white;
-  width: 300px;
+  /* background-color: white; */
   display: flex;
-  justify-content: center;
+  /* justify-content: left; */
   border-radius: 5px;
 }
 
 .profile-exp{
   /* border: 1px solid black; */
-  width: 100px;
+  padding: 10px;
+  background-color: rgb(238, 224, 245);
+  margin-right: 5px;
+  border-radius: 3px;
+  width: 30%;
   height: 40px;
   display: flex;
   flex-direction: column;
@@ -94,7 +109,7 @@
 .profile-exp > div{
   height: 1px;
   text-align: center;
-  width: 100px;
+  /* width: 100px; */
 }
 
 .exp{
@@ -103,12 +118,100 @@
 }
 
 .profile-year{
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.exp-box{
+  width: 100%;
+}
+
+.rating-box{
+  width: 100%;
 }
 
 .rating-star{
   height: 30px;
+}
+
+.rating-star > div{
+  width: 100%;
+}
+
+.profile-image{
+  width: 80%;
+  height: 300px;
+  /* border: 1px solid black; */
+  padding-top: 30px;
+}
+
+.profile-image > img{
+  width: 100%;
+}
+
+
+/* user's card */
+
+.profile-card{
+  /* background-color: grey!important; */
+  margin-top: 10%!important;
+  display: flex;
+  margin: auto auto;
+  width: 50%;
+  gap: 5%;
+  /* border: 1px solid black; */
+  padding: 30px;
+  box-shadow: 4px 3px 10px grey;
+}
+
+.profile-card-image{
+  width: 30%;
+  /* border: 1px solid black; */
+}
+
+.profile-card-image > img{
+  width: 100%;
+  padding-top: 40px;
+}
+
+.profile-card-data{
+  /* border: 1px solid black; */
+  width: 50%;
+}
+
+.profile-card-heading{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.profile-card-summary{
+  color: grey;
+}
+
+.cv-btn{
+  background-color: rgb(188, 122, 249);
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  text-decoration: none;
+}
+
+.cv-btn:hover{
+  height: 46px;
+  width: 200px;
+  border: 2px solid rgb(188, 122, 249);
+  background-color: white;
+  color: rgb(160, 82, 233);
+  text-decoration: none;
 }
 
 .footer{
@@ -119,7 +222,7 @@
   align-items: center;
   justify-content: center;
   float:inline-end;
-  
+  margin-top: 5%;
 }
 
 .footer-text{
