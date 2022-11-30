@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import data from '../../data.json'
 import Ratingstar from '../StarsRating/RatingStar'
 import UserCard from './UserCard'
-import profileImage from '../../Images/anonymous.png'
+import profileImage from '../../Assets/anonymous.png'
 const UsersProfile = () => {
     const params = useParams()
     // console.log(params)
