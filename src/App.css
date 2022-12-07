@@ -33,8 +33,8 @@ body{
 /* USER'S CARD     */
 
 .user-list{
-  width: 100%;
-  height: 100vh;
+  width: 97.3%;
+  height: 100%;
   margin: -2% auto;
   position: relative;
     left: 0;
@@ -45,35 +45,47 @@ body{
 
 .users-table{
   width: 90%;
-  margin: auto auto;
+  margin: 3% auto;
+  background-color: #d7dfe4;
+  font-family: 'Times New Roman', Times, serif;
   /* border: 1px solid black; */
   /* padding: 20px; */
+  border-radius: 10px;
 }
 
 .users-head{
   /* border: 1px solid black; */
   height: 60px;
   text-align: left;
+  background-color: #c8d1da;
 }
 
 .users-head >tr{
-  background-color: rgb(215, 232, 247);
+  background-color: rgb(131, 140, 147);
+  border: none;
 }
 
 .users-head > tr > th{
-  padding-left: 10px;
+  padding-left: 19px;
+  border: none;
+  border-right: 1px solid white;
+  color: rgba(241, 236, 236, 0.937);
+  font-size: larger;
 }
 
 .data-row{
   /* border: 1px solid black; */
-  height: 50px;
+  height: 65px;
   /* border-bottom: 1px solid black; */
   /* background-color: aqua; */
+  box-shadow: 1px 1px 5px rgb(70, 69, 69);
+  
 }
 
 .data-row > td{
-  border-bottom: 1px solid rgb(224, 217, 217);
-  padding-left: 10px;
+  /* border-bottom: 1px solid rgb(224, 217, 217); */
+  padding-left: 20px;
+  border-right: 1px solid rgb(240, 237, 237);
 }
 
 .user-name{

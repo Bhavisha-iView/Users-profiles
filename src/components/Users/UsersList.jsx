@@ -9,11 +9,8 @@ export default function UsersList() {
         <thead className='users-head' >
           <tr>
             <th >Developer_Name</th>
-            <th></th>
             <th >Skills</th>
-            <th></th>
             <th >Experience</th>
-            <th></th>
             <th >Vendor</th>
           </tr>
         </thead>
@@ -26,11 +23,8 @@ export default function UsersList() {
               <td>
                 <Link className='user-name'to={`user/${row.Id}`} >{row.Developer_Name}</Link>
               </td>
-              <td></td>
               <td >{row.Skills}</td>
-              <td></td>
               <td >{row.Experience}</td>
-              <td></td>
               <td >{row.Vendor}</td>
             </tr>
           ))}
